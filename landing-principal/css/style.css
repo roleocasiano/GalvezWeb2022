@@ -1,0 +1,447 @@
+/* -------------Global------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root{
+    --gmaPrimaryColor: #f06515;
+    --gmaWhiteColor: #ffffff;
+    --gmaGrayTextColor: #101010;
+    --gmaTopMargin: 40px;
+}
+
+.lcasiano--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.lcasiano--generalTopMargin{
+    margin-top: var(--gmaTopMargin);
+    display: flex;
+    justify-content: center;
+}
+
+.lcasiano--generalImgs{
+    width: 100%;
+}
+
+.lcasiano--generalButton{
+    background-color: var(--gmaPrimaryColor);
+    border: 1px solid var(--gmaPrimaryColor);
+    border-radius:10px;
+    cursor:pointer;
+    color: var(--gmaWhiteColor);
+    padding:10px 20px;
+    text-decoration:none;
+}
+.lcasiano--generalButton:hover {
+    background-color: var(--gmaWhiteColor);
+    color: var(--gmaPrimaryColor);
+}
+.lcasiano--generalButton:active {
+    position:relative;
+    top:1px;
+}
+
+.lcasiano--generalButtonNegative{
+    background-color: var(--gmaWhiteColor);
+    border: 1px solid var(--gmaWhiteColor);
+    border-radius:10px;
+    cursor:pointer;
+    color: var(--gmaPrimaryColor);
+    padding:10px 20px;
+    text-decoration:none;
+}
+.lcasiano--generalButtonNegative:hover {
+    background-color: var(--gmaPrimaryColor);
+    color: var(--gmaWhiteColor);
+}
+.lcasiano--generalButtonNegative:active {
+    position:relative;
+    top:1px;
+}
+
+
+/* --------------------------------------------------------------------Texto-- */
+
+.lcasiano--generalText h2{
+    font-size: 2rem;
+}
+.lcasiano--generalText h3{
+    font-size: 1.7rem;
+}
+.lcasiano--generalText h4{
+    font-size: 1.4rem;
+}
+.lcasiano--generalText p{
+    font-size: 1.1rem;
+}
+
+/* --------------------------------------------------------------------Segmento_1-- */
+
+.lcasiano--homePresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.lcasiano--homePresetationText{
+    width: 94%;
+    order: 2;
+    text-align: center;
+}
+
+.lcasiano--homePresentationPhoto{
+    width: 94%;
+}
+
+.lcasiano--homeRelevantData{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--gmaTopMargin);
+    justify-content: center;
+}
+
+.lcasiano--homeRelevantDatInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.lcasiano--homeRelevantDatInfo img{
+    max-width: 30%;
+}
+
+/* --------------------------------------------------------------------Segmento_2-- */
+
+.lcasiano--whoWeR{
+    background-color: var(--gmaPrimaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.lcasiano--whoWeRText{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-top: var(--gmaTopMargin);
+}
+
+.lcasiano--whoWeRText h2 , .lcasiano--whoWeRText p{
+    color: var(--gmaWhiteColor);
+
+}
+
+.lcasiano--whoWeRText h2{
+    margin-bottom: 20px;
+}
+
+.lcasiano--whoWeRPhoto{
+    width: 94%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------------------Segmento_3-- */
+
+.lcasiano--areas{
+    padding-top: var(--gmaTopMargin);
+    padding-bottom: var(--gmaTopMargin);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lcasiano--areas > h2{
+    text-align: center;
+}
+
+.lcasiano--areasCardGroup{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lcasiano--areasCardUnity{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 94%;
+    background-color: var(--gmaWhiteColor);
+    border: 1px solid var(--gmaPrimaryColor);
+    border-radius:10px;
+    cursor:pointer;
+    color: var(--gmaGrayTextColor);
+    padding:10px 20px;
+    text-decoration:none;
+}
+
+.lcasiano--areasCardUnity:hover {
+    background-color: var(--gmaPrimaryColor);
+    color: var(--gmaWhiteColor);
+}
+.lcasiano--areasCardUnity:active {
+    position:relative;
+    top:1px;
+}
+
+.lcasiano--areasCardUnity h3{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.lcasiano--areasCardUnity p{
+    padding-bottom: 40px;
+}
+
+
+.lcasiano--generalButtonCardMaster{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lcasiano--generalButtonSection{
+    margin-top: var(--gmaTopMargin);
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------------------Segmento_4-- */
+
+.lcasiano--clientsAndMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: var(--gmaTopMargin);
+}
+
+.lcasiano--valuesBrand{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--gmaTopMargin);
+    justify-content: center;
+}
+
+.lcasiano--valuesBrandCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 94%;
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.lcasiano--valuesBrand img{
+    max-width: 10%;
+}
+
+.lcasiano--brandsTrust{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 94%;
+    margin: auto;
+}
+
+.lcasiano--brandsTrust > h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.lcasiano--brandsTrust img{
+    width: 100%;
+}
+
+/*--------------------------------------------------Celulares--*/
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.lcasiano--homePresentation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.lcasiano--homePresetationText{
+    width: 94%;
+    order: 1;
+    margin: 0 10px 0 10px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.lcasiano--homePresentationPhoto{
+    width: 94%;
+    order: 2;
+}
+
+.lcasiano--homeRelevantData{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--gmaTopMargin);
+    justify-content: center;
+}
+
+.lcasiano--homeRelevantDatInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 130px;
+    margin-bottom: 0px;
+}
+
+.lcasiano--homeRelevantDatInfo img{
+    max-width: 20%;
+}
+
+.lcasiano--left{
+    justify-content: flex-start;
+}
+
+.lcasiano--areasCardGroup{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lcasiano--areasCardUnity{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+    padding:10px 20px;
+}
+
+.lcasiano--valuesBrandCards{
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    height: unset;
+    margin-bottom: 40px;
+}
+
+.lcasiano--valuesBrand img{
+    max-width: 15%;
+    padding-bottom: 10px;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .lcasiano--homePresentation{
+        height: 1000px;
+    }
+
+    .lcasiano--homePresetationText{
+        padding: 0 25px 0 25px;
+    }
+
+    .lcasiano--whoWeR{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 1080px;
+    }
+    
+    .lcasiano--whoWeRText{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        margin-top: var(--gmaTopMargin);
+        order: 2;
+        padding: 0 25px 0 25px;
+    }
+    
+    
+    .lcasiano--whoWeRText h2{
+        margin-bottom: 20px;
+    }
+    
+    .lcasiano--whoWeRPhoto{
+        width: 94%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .lcasiano--areas{
+        padding-top: var(--gmaTopMargin);
+        padding-bottom: var(--gmaTopMargin);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+    }
+
+    .lcasiano--areas > h2{
+        padding-bottom: 80px;
+    }
+
+    .lcasiano--areasCardUnity{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 30%;
+        padding:10px 20px;
+    }
+
+    .lcasiano--clientsAndMore{
+        flex-direction: row;
+    }
+
+    .lcasiano--valuesBrand{
+        width: 70%;
+    }
+
+    .lcasiano--valuesBrand{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: var(--gmaTopMargin);
+        justify-content: center;
+    }
+    
+    .lcasiano--valuesBrandCards{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 94%;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    
+    .lcasiano--valuesBrandCards div{
+        width: 80%;
+    }
+
+    .lcasiano--valuesBrand img{
+        width: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .lcasiano--container{
+        max-width: 1600px;
+        margin: auto;
+    }
+}
